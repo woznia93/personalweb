@@ -3,12 +3,12 @@
   text-align: center;
   padding: 20px;
   font-size: 20px;
+  color: black
 }
 
 .App-header {
   background-color: #282c34;
   padding: 20px;
-  color: white;
 }
 
 h1,h2 {

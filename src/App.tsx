@@ -35,13 +35,12 @@ const projects: Project[] = [
   description: "Helped speed run Mario 64"
   },
   {
-    title: "Designer Wardrobe",
-    languages: "Python",
-    date: "January 2024",
-    description: "Helped users design their own wardrobe using DALL-E to make new outfits based on outfits they already have"
+  title: "Designer Wardrobe",
+  languages: "Python",
+  date: "January 2024",
+  description: "Helped users design their own wardrobe using DALL-E to make new outfits based on outfits they already have"
   },
 ];
-
 
 
 
@@ -55,6 +54,7 @@ const App: React.FC = () => {
       {/* About Me Section */}
       <section id="about-me" style={{ padding: "20px", backgroundColor: "#f4f4f4" }}>
         <h2>About Me</h2>
+        <img src="" alt="" />
         <p>
           Hello! I'm Brady Wozniak, a hopeful developer with experience in building modern web 
           applications. I enjoy learning new technologies and collaborating on projects. In my spare time, I enjoy spending time with friends and playing soccer.
