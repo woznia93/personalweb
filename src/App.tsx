@@ -34,7 +34,16 @@ const projects: Project[] = [
   date: "October 2023",
   description: "Helped speed run Mario 64"
   },
+  {
+    title: "Designer Wardrobe",
+    languages: "Python",
+    date: "January 2024",
+    description: "Helped users design their own wardrobe using DALL-E to make new outfits based on outfits they already have"
+  },
 ];
+
+
+
 
 const App: React.FC = () => {
   return (
