@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal website! This platform serves as a central hub to showcase my professional journey, accomplishments, projects, and interests. Whether you're a recruiter, collaborator, or just curious, I hope you enjoy exploring my story.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **About Me**: Get to know my background, skills, and interests.
+- **Resume**: View or download my up-to-date resume.
+- **Accomplishments**: A highlight reel of my key achievements.
+- **Projects**: Detailed overviews of projects I've worked on, complete with descriptions, tools used, and links to repositories or live demos.
+- **Contact**: Easy ways to get in touch with me, whether via email, social media, or a contact form.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This website is built using:
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**: [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- **Frameworks**: [React](https://reactjs.org/) (or substitute with your framework/library)
+- **Backend**: [Node.js](https://nodejs.org/) (optional if dynamic functionality is implemented)
+- **Hosting**: [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), or [Vercel](https://vercel.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To view the website locally:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/personal-website.git
+   cd personal-website
+   Install dependencies (if applicable):
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+npm install
+
+Run Development Server:
+
+npm start
+
+bash
+Copy code
+npm start
+Open your browser and navigate to:
+http://localhost:3000
+
+📁 Project Structure
+├── public/
+│ ├── index.html # Main HTML file
+│ ├── assets/ # Images, icons, and other static files
+│
+├── src/
+│ ├── components/ # Reusable React components
+│ ├── pages/ # Main pages (Home, About, Projects, etc.)
+│ ├── App.js # Main React app entry point
+│
+├── README.md # You're reading this!
+├── package.json # Project metadata and dependencies
+
+📜 License
+This project is open-source and available under the MIT License.
+
+🤝 Contributing
+While this is a personal project, I’m always open to suggestions and improvements. Feel free to fork the repo and submit a pull request!
+
+💌 Contact
+For inquiries or collaborations:
+
+Email: woznia93@msu.edu
+LinkedIn: [linkedin.com/in/bradywozniak](https://www.linkedin.com/in/bradywozniak/)
+Portfolio: www.yourwebsite.com
+javascript
+Copy code
+
+Feel free to replace placeholders like `your.email@example.com`, `linkedin.com/in/yourprofile`, and `www.yourwebsite.com` with your actual details.
