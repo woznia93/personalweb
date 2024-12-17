@@ -2,6 +2,7 @@
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
+  font-size: 20px;
 }
 
 .App-header {
@@ -26,6 +27,7 @@ section {
 
 #resume {
   background-color: #f4f4f4;
+  text-align: left;
 }
 
 a {
@@ -41,7 +43,14 @@ a:hover {
 .contact-section{
   padding: 20px;
   background-color: #e4e4e4;
+  text-align: left;
 }
+
+#projects{
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
 
 .contact-heading {
   margin-bottom: 15px;
