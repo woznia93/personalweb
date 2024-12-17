@@ -17,6 +17,25 @@ const jobs: Job[] = [
   },
 ];
 
+
+
+type Project = {
+  title: string;
+  languages: string;
+  date: string;
+  description: string;
+};
+
+
+const projects: Project[] = [
+  {
+  title: "Mario Speed Run Assistant",
+  languages: "Python",
+  date: "October 2023",
+  description: "Helped speed run Mario 64"
+  },
+];
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -52,6 +71,21 @@ const App: React.FC = () => {
         </a>
       </section>
       
+      {/* Projects */}
+      <section id = "projects" style = {{ padding: "20px", backgroundColor: "#e2e2e2"}}>
+          <h2>My Projects</h2>
+          <p>My Projects and a summary of what they are/do:</p>
+          <ul>
+            {projects.map((project,index) => (
+              <li key = {index}>
+                <strong>{project.title}</strong> with {project.languages} - {project.date}
+                <br />
+                {project.description}
+              </li>
+            ))}
+          </ul>
+        </section>
+
       {/* Contact Info */}
       <section id="contact" className="contact-section">
       <h3 className="contact-heading">Contact Info</h3>
