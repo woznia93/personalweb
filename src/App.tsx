@@ -75,7 +75,7 @@ const App: React.FC = () => {
           ))}
         </ul>
         <p>You can download my full resume here:</p>
-        <a href="/Resume 2 - Copy.pdf" download>
+        <a href="/bradywozniakresume.pdf" download>
           Download Resume (PDF)
         </a>
       </section>
