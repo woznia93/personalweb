@@ -1,35 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+type Job = {
+  title: string;
+  company: string;
+  year: string;
+  description: string;
+};
 
+const jobs: Job[] = [
+  {
+    title: "Research Assistant",
+    company: "Michigan State University",
+    year: "2023-Present",
+    description: "Conducted research on advanced machine learning algorithms and data processing."
+  },
+];
+
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="App">
+      <header className="App_Header">
+        <h1>Welcome to My Personal Website</h1>
+      </header>
 
-export default App
+      {/* About Me Section */}
+      <section id="about-me" style={{ padding: "20px", backgroundColor: "#f4f4f4" }}>
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Brady Wozniak, a hopeful developer with experience in building modern web 
+          applications. I enjoy learning new technologies and collaborating on projects. In my spare time, I enjoy spending time with friends and playing soccer.
+        </p>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" style={{ padding: "20px", backgroundColor: "#e2e2e2" }}>
+        <h2>My Resume</h2>
+        <p>Here is a brief summary of my work experience and skills:</p>
+        <ul>
+          {jobs.map((job, index) => (
+            <li key={index}>
+              <strong>{job.title}</strong> at {job.company} - {job.year}
+              <br />
+              {job.description}
+            </li>
+          ))}
+        </ul>
+        <p>You can download my full resume here:</p>
+        <a href="/Resume 2 - Copy.pdf" download>
+          Download Resume (PDF)
+        </a>
+      </section>
+      
+      {/* Contact Info */}
+      <section id ="contact" style={{ padding: "20px", backgroundColor: "#e2e2e2" }}>
+        <h3>Contact Info</h3>
+        <p>
+          Email: woznia93@msu.edu
+          Phone: 586-604-0983
+          <a href="https://github.com/woznia93">GitHub</a>    
+          <a href="https://www.linkedin.com/in/bradywozniak/">Linkedin</a>
+        </p>
+      </section>
+
+
+
+
+
+    </div>
+  );
+};
+
+export default App;
