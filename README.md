@@ -2,6 +2,8 @@
 
 Welcome to my personal website! This platform serves as a central hub to showcase my professional journey, accomplishments, projects, and interests. Whether you're a recruiter, collaborator, or just curious, I hope you enjoy exploring my story.
 
+[https://personalweb-eight-bice.vercel.app/](https://personalweb-eight-bice.vercel.app/)
+
 ## 🌟 Features
 
 - **About Me**: Get to know my background, skills, and interests.
