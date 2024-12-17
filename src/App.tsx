@@ -53,20 +53,22 @@ const App: React.FC = () => {
       </section>
       
       {/* Contact Info */}
-      <section id ="contact" style={{ padding: "20px", backgroundColor: "#e2e2e2" }}>
-        <h3>Contact Info</h3>
-        <p>
-          Email: woznia93@msu.edu
-          Phone: 586-604-0983
-          <a href="https://github.com/woznia93">GitHub</a>    
-          <a href="https://www.linkedin.com/in/bradywozniak/">Linkedin</a>
-        </p>
+      <section id="contact" className="contact-section">
+      <h3 className="contact-heading">Contact Info</h3>
+      <p className="contact-paragraph">
+        <strong>Email:</strong> <a href="mailto:woznia93@msu.edu">woznia93@msu.edu</a>
+      </p>
+      <p className="contact-paragraph">
+        <strong>Phone:</strong> 586-604-0983
+      </p>
+      <p className="contact-paragraph">
+        <strong>Find me on:</strong>
+        <br />
+        <a href="https://github.com/woznia93" className="contact-links">GitHub</a>
+        <br />
+        <a href="https://www.linkedin.com/in/bradywozniak/" className="contact-links">LinkedIn</a>
+      </p>
       </section>
-
-
-
-
-
     </div>
   );
 };

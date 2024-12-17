@@ -37,3 +37,22 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.contact-section{
+  padding: 20px;
+  background-color: #e4e4e4;
+}
+
+.contact-heading {
+  margin-bottom: 15px;
+}
+
+.contact-paragraph {
+  line-height: 1.6;
+  font-size: 16px; 
+}
+
+.contact-links a{
+  margin-right: 10px;
+  text-decoration: none;
+}
