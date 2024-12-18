@@ -13,7 +13,7 @@ const jobs: Job[] = [
     title: "Research Assistant",
     company: "Michigan State University",
     year: "2023-Present",
-    description: "Conducted research on advanced machine learning algorithms and data processing."
+    description: "Conducted research on advanced machine learning algorithms and data processing with protein models."
   },
 ];
 
@@ -40,6 +40,12 @@ const projects: Project[] = [
   date: "January 2024",
   description: "Helped users design their own wardrobe using DALL-E to make new outfits based on outfits they already have"
   },
+  {
+  title: "Autoencoder", 
+  languages: "Python",
+  date: "March 2024",
+  description: "Designed an Autoencoder to encode carbon alpha atom positions in a protein, then reconstruct this protein using these encoded values"
+  },
 ];
 
 
@@ -47,19 +53,29 @@ const projects: Project[] = [
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App_Header">
+      {/* Header Section */}
+      <header>
         <h1>Welcome to My Personal Website</h1>
+        <h2><strong>Brady Wozniak | Developer</strong></h2>
       </header>
 
       {/* About Me Section */}
-      <section id="about-me" style={{ padding: "20px", backgroundColor: "#f4f4f4" }}>
-        <h2>About Me</h2>
-        <img src="" alt="" />
-        <p>
-          Hello! I'm Brady Wozniak, a hopeful developer with experience in building modern web 
-          applications. I enjoy learning new technologies and collaborating on projects. In my spare time, I enjoy spending time with friends and playing soccer.
-        </p>
+      <section id="about-me" style={{ padding: "20px", backgroundColor: "white", display: "flex", alignItems: "center" }}>
+       <div style={{ flex: 1, paddingRight: "20px" }}>
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Brady Wozniak, I'm a sophomore at Michigan State University majoring in Computer Science with a minor in math. In my spare time, I enjoy spending time with friends and playing soccer.
+          </p>
+        </div>
+        <div style={{ flex: 1, textAlign: "center" }}>
+          <img
+            src="me2.jpg"
+            alt="Brady Wozniak"
+            style={{ width: "300px", height: "300px", borderRadius: "", objectFit: "cover" }}
+          />
+        </div>
       </section>
+
 
       {/* Resume Section */}
       <section id="resume" style={{ padding: "20px", backgroundColor: "#e2e2e2" }}>
@@ -81,9 +97,9 @@ const App: React.FC = () => {
       </section>
       
       {/* Projects */}
-      <section id = "projects" style = {{ padding: "20px", backgroundColor: "#e2e2e2"}}>
+      <section id = "projects" style = {{ padding: "20px", backgroundColor: "white"}}>
           <h2>My Projects</h2>
-          <p>My Projects and a summary of what they are/do:</p>
+          <p>Here are a few projects I have worked on:</p>
           <ul>
             {projects.map((project,index) => (
               <li key = {index}>
@@ -112,6 +128,13 @@ const App: React.FC = () => {
         <a href="https://www.linkedin.com/in/bradywozniak/" className="contact-links">LinkedIn</a>
       </p>
       </section>
+
+
+      {/* Footer Section */}
+      <footer>
+        <p>&copy; 2024 Brady Wozniak.</p>
+      </footer>
+
     </div>
   );
 };

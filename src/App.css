@@ -1,7 +1,7 @@
 .App {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   font-size: 20px;
   color: black
 }
@@ -11,6 +11,28 @@
   padding: 20px;
   color: blue
 }
+
+
+header {
+  text-align: center;
+  background-color: #c0c0c0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #000;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 20px;
+  margin: 10px 0 0;
+  font-weight: normal;
+  color: #333;
+}
+
 
 h1,h2 {
   color: #333;
@@ -65,4 +87,14 @@ a:hover {
 .contact-links a{
   margin-right: 10px;
   text-decoration: none;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #c0c0c0;
+  padding: 5px;
+  margin-top: 20px;
+  border-top: 3px solid #000;
+  font-size: 15px;
 }
