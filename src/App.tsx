@@ -78,7 +78,7 @@ const App: React.FC = () => {
 
 
       {/* Resume Section */}
-      <section id="resume" style={{ padding: "20px", backgroundColor: "#e2e2e2" }}>
+      <section id="resume" style={{ padding: "20px", backgroundColor: "white" }}>
         <h2>My Resume</h2>
         <p>Here is a brief summary of my work experience and skills:</p>
         <ul>
