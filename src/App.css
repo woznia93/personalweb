@@ -65,7 +65,7 @@ a:hover {
 
 .contact-section{
   padding: 20px;
-  background-color: #e4e4e4;
+  background-color: white;
   text-align: left;
 }
 
@@ -77,11 +77,13 @@ a:hover {
 
 .contact-heading {
   margin-bottom: 15px;
+  background-color: white;
 }
 
 .contact-paragraph {
   line-height: 1.6;
   font-size: 16px; 
+  background-color: white;
 }
 
 .contact-links a{

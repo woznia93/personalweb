@@ -13,7 +13,7 @@ const jobs: Job[] = [
     title: "Research Assistant",
     company: "Michigan State University",
     year: "2023-Present",
-    description: "Conducted research on advanced machine learning algorithms and data processing with protein models."
+    description: "Developed and implemented PyTorch-based autoencoder models with NumPy on a Linux subsystem, reducing input size while reconstructing Carbon alpha molecular structures with 99% accuracy. I refactored the codebase into PyTorch Lightning for improved scalability, debugged and retrained AI models, and refined data preprocessing methods, achieving a 10% improvement in prediction accuracy. I presented findings to faculty and peers, showcasing technical expertise and communication skills. Additionally, I am currently working on creating a large language model using MinGPT."
   },
 ];
 
@@ -38,7 +38,7 @@ const projects: Project[] = [
   title: "Designer Wardrobe",
   languages: "Python",
   date: "January 2024",
-  description: "Helped users design their own wardrobe using DALL-E to make new outfits based on outfits they already have"
+  description: "A unique application that helps users create stylish and personalized outfit suggestions based on their existing wardrobe. By leveraging user preferences and OpenAI's DALL-E, the tool refines and generates outfit ideas tailored to the user's tastes"
   },
   {
   title: "Autoencoder", 
@@ -79,7 +79,7 @@ const App: React.FC = () => {
 
       {/* Resume Section */}
       <section id="resume" style={{ padding: "20px", backgroundColor: "white" }}>
-        <h2>My Resume</h2>
+        <h2>My Experience</h2>
         <p>Here is a brief summary of my work experience and skills:</p>
         <ul>
           {jobs.map((job, index) => (
